@@ -1,5 +1,15 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+import product, { numbers } from './math.js'
+
+console.log(numbers.reduce(product));
+
+// import * as math from './math.js' // combine all exports into a math object
+// can be named however we like, doesn't have to be math
+
+// console.log(math.numbers.reduce(math.sum));
 
 function App() {
   return (
